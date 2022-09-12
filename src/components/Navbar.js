@@ -1,17 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
-// import WebOutlinedIcon from "@mui/icons-material/WebOutlined";
-import WebIcon from "@mui/icons-material/Web";
-import DashboardIcon from "@mui/icons-material/Dashboard";
+// import DashboardIcon from "@mui/icons-material/Dashboard";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleClick = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <div className="navbar">
-      <Link to="/">
-        <DashboardIcon className="navbar_logo" />
+      <Link className="navbar_logo" to="/">
+        <h1>
+          R<span>G</span>
+        </h1>
+        {/* <DashboardIcon className="navbar_logo" /> */}
       </Link>
-      <div className="navbar_links">
+      <div className="navbar_links" id={showMenu ? "hidden" : ""}>
         <div>
           <Link to="/project">Projects</Link>
         </div>
@@ -23,6 +32,13 @@ const Navbar = () => {
         <div>
           <a href="mailto:rohitgaikwad726@gmail.com">Contact Me </a>
         </div>
+      </div>
+      <div onClick={handleClick}>
+        {showMenu ? (
+          <MenuIcon className="menu" />
+        ) : (
+          <CloseIcon className="close" />
+        )}
       </div>
     </div>
   );
