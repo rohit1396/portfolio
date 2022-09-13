@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleClick = () => {
     setShowMenu(!showMenu);
   };
-
+  // console.log(showMenu);
   return (
     <div className="navbar">
       <Link className="navbar_logo" to="/">
@@ -20,8 +20,8 @@ const Navbar = () => {
         </h1>
         {/* <DashboardIcon className="navbar_logo" /> */}
       </Link>
-      <div className="navbar_links" id={showMenu ? "hidden" : ""}>
-        <div>
+      <div className={showMenu ? "navbar_links active" : "navbar_links"}>
+        <div onClick={handleClick}>
           <Link to="/project">Projects</Link>
         </div>
         <div>
@@ -33,11 +33,11 @@ const Navbar = () => {
           <a href="mailto:rohitgaikwad726@gmail.com">Contact Me </a>
         </div>
       </div>
-      <div onClick={handleClick}>
+      <div className="hamburger_menu" onClick={handleClick}>
         {showMenu ? (
-          <MenuIcon className="menu" />
-        ) : (
           <CloseIcon className="close" />
+        ) : (
+          <MenuIcon className="menu" />
         )}
       </div>
     </div>
