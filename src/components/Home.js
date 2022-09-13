@@ -15,8 +15,8 @@ const Home = () => {
           <p>I enjoy making Web Pages and learning new skills.</p>
           <p>I mostly work with ReactJs.</p>
           <p>
-            I believe a good developer is always developing new skills, accept
-            challenges and seek feedback in order to grow
+            I believe a good developer is always developing new skills,
+            accepting challenges and seek feedback in order to grow
           </p>
           <p>
             My aim is to get placed in a good IT firm with some decent package.
