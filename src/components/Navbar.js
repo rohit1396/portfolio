@@ -22,6 +22,9 @@ const Navbar = () => {
       </Link>
       <div className={showMenu ? "navbar_links active" : "navbar_links"}>
         <div onClick={handleClick}>
+          <Link to="/">Home</Link>
+        </div>
+        <div onClick={handleClick}>
           <Link to="/project">Projects</Link>
         </div>
         <div>

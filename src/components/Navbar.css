@@ -28,10 +28,10 @@
 }
 
 .navbar_links {
-    flex: 30%;
+    flex: 40%;
     /* width: 400px; */
     display: flex;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     /* align-items: center; */
     justify-content: space-between;
 }
@@ -65,7 +65,7 @@
     }
 
     .navbar_links.active {
-        right: 0;
+        right: 10px;
     }
 
     .navbar_links > div {
@@ -82,6 +82,13 @@
         transition: 0.8s;
     }
 
+}
+
+@media (min-width:777px) {
+    .navbar_links > div > a:hover {
+        border-bottom: 2px solid white;
+        padding-bottom: 3px;
+    }
 }
 
 @media (min-width:777px) and (max-width: 1028px) {
