@@ -28,6 +28,22 @@ const Project = () => {
         <p>A Netflix Clone displaying Various categories of Movies.</p>
         <p>User Authentication With Firebase.</p>
       </div>
+      <div className="project_info">
+        <a href="https://rohit-amazon-clone.netlify.app/" target="_blank">
+          <img
+            className="project_img"
+            src="..\images\proj3.png"
+            alt="amazon_Clone"
+          />
+        </a>
+        <h3 className="project_title">Amazon Clone</h3>
+        <p>This project is a replica of Amazon shopping site.</p>
+        <p>
+          User would get a idea of how products are added and remove from
+          Shopping cart.
+        </p>
+        <p>Sign in/Sign up functionality using Firebase.</p>
+      </div>
     </div>
   );
 };
