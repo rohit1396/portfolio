@@ -15,6 +15,7 @@ const Project = () => {
         <h3 className="project_title">To-do List App</h3>
         <p>A simple To-Do List App </p>
         <p>Functionalities : ADD, UPDATE, DELETE</p>
+        <p>Local Storage Added</p>
       </div>
       <div className="project_info">
         <a href="https://netflix-rg.netlify.app/" target="_blank">
